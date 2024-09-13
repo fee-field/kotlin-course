@@ -1,4 +1,4 @@
-package com.feefield.kotlincourse
+package com.feefield.kotlincourse.classworks
 
 val name: String = "Alice"
 
