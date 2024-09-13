@@ -164,7 +164,6 @@ var noiseLevel: Int = 0
         }
     }
 
-
 // Лог событий мероприятия
 // mutable list - события постоянно добавляются (? какая разница, val или var для mutable list и map?)
 
