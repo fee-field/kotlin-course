@@ -1,8 +1,6 @@
 package com.feefield.kotlincourse.lesson03
 
-import com.feefield.kotlincourse.lazyValue
 import java.time.LocalDate
-import java.time.LocalDateTime
 import java.time.Duration
 
 // Hackathon Survival
@@ -21,7 +19,7 @@ const val EVENT: String = "Event Name"
 
 // Дата проведения:
 
-var date: LocalDateTime = LocalDate.of(2025,1,1)
+var date: LocalDate = LocalDate.of(2025,1,1)
 
 // Место проведения:
 
