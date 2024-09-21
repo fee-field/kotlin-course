@@ -12,8 +12,8 @@ val lazyValue: String by lazy {
     "text"
 }
 
-var speed: Double = 5.0
-var speed: Double? = null
+//var speed: Double = 5.0
+//var speed: Double? = null
 
 var count: Int = 0
     get() = field
