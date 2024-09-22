@@ -2,12 +2,10 @@ package com.feefield.kotlincourse.lesson06
 
 //В каждом задании также нужно валидировать входящие данные, если это имеет смысл.
 
-//Задание 1: "Определение Сезона"
-//Контекст: Напишите функцию, которая на основе номера месяца возвращает сезон года.
 
 fun main() {
-    season(5)
-    convertIntoHuman(6)
+    println(season(5))
+    println(convertIntoHuman(6))
     println(transport(1000))
     println(bonus(700))
     println(returnFileType("txt"))
@@ -16,40 +14,65 @@ fun main() {
     println(availableCat(17))
 }
 
-fun season(month: Int)  {
-    val seasonResult =  if (month in 3..5) {
-       "spring"
-   }
-   else if (month in 6..8) {
-       "summer"
-   }
-    else if (month in 9..11) {
-        "autumn"
-   }
-    else if (month in 1..2 || month == 12) {
-        "winter"
-   }
-    else {
-        "invalid"
-   }
-    println(seasonResult)
+//fun season(month: Int)  {
+//    val seasonResult =  if (month in 3..5) {
+//       "spring"
+//   }
+//   else if (month in 6..8) {
+//       "summer"
+//   }
+//    else if (month in 9..11) {
+//        "autumn"
+//   }
+//    else if (month in 1..2 || month == 12) {
+//        "winter"
+//   }
+//    else {
+//        "invalid"
+//   }
+//    println(seasonResult)
+//}
+
+//Задание 1: "Определение Сезона"
+//Контекст: Напишите функцию, которая на основе номера месяца возвращает сезон года.
+
+fun season(months: Int) : String{
+    return when(months) {
+        in 3..5 -> "spring"
+        in 6..8 -> "summer"
+        in 9..11 -> "autumn"
+        in 1..2, 12 -> "winter"
+        else -> "invalid input"
+    }
 }
 
 //Задание 2: "Расчет Возраста Питомца"
 //Контекст: Создайте функцию, которая преобразует возраст собаки в "человеческие" годы.
 // До 2 лет каждый год собаки равен 10.5 человеческим годам, после - каждый год равен 4 человеческим годам.
 
-fun convertIntoHuman(dogAge: Int) : Double {
-    val result = if(dogAge <=2) {
-        dogAge * 10.5
-    }
-        else  {
-        2 * 10.5 + (dogAge - 2) * 4
-        }
+//fun convertIntoHuman(dogAge: Int) : Double {
+//    val result = if(dogAge <=2) {
+//        dogAge * 10.5
+//    }
+//        else  {
+//        2 * 10.5 + (dogAge - 2) * 4
+//        }
+//
+//    println(result)
+//    return result
+//}
 
-           println(result)
-    return result
+fun convertIntoHuman(dogAge: Int) : Double {
+    return if (dogAge < 0) {
+        println("invalid input")
+        0.0
+    } else if(dogAge <= 2)  {
+        dogAge * 10.5
+    }   else  {
+        2 * 10.5 + (dogAge - 2) * 4
+    }
 }
+
 
 //Задание 3: "Определение Вида Транспорта"
 //Контекст: Напишите функцию, которая определяет, какой вид транспорта лучше использовать, исходя из длины маршрута.
@@ -126,7 +149,7 @@ fun clothingType(temp: Int) : String {
         in -30.. 0 -> "куртка и шапка"
         in 0..15 -> "ветровка"
         in 15..35 -> "футболка и шорты"
-        else -> "не выходитe из дома"
+        else -> "не выходите из дома"
     }
 }
 
@@ -139,7 +162,7 @@ fun availableCat(age: Int) : String {
     return when(age) {
         in 0..11 -> "детские"
         in 12..18 -> "подростковые"
-        else -> if  (age > 18) "18+" else "invalid entry"
+        else -> if  (age > 18) "18+" else "invalid input"
     }
 
 }

@@ -120,7 +120,7 @@ val task: List<String> = listOf("task1", "task2", "task3")
 var availableEquipment: MutableMap<String, Boolean> = mutableMapOf("Equipment1" to true, "Equipment2" to false )
     get() = field
     set(value) {
-    if (isAccessible()) { field = value }
+   // if (isAccessible()) { field = value }
   //      else ??? print?? "Not Accessible"
 }
 
@@ -133,9 +133,7 @@ lateinit var mealSchedule: MutableMap<String, String>
 
 //План мероприятий на случай сбоев
 
-val contingencyPlan: List<String> by lazy {
-    listOf("step1", "step2", "step3")
-}
+val contingencyPlan: List<String> = listOf("step1", "step2", "step3")
 
 //Текущая температура в помещении
 
@@ -176,10 +174,10 @@ val prizeDistribution: MutableMap<String, String> = mutableMapOf(
 
 // Статус получения всех необходимых разрешений
 
-var accessStatus: Boolean = true
-    get() = field
-    set(value) {
-         if (isAccesible()) {
-             field = value
-         }
-}
+//var accessStatus: Boolean = true
+//    get() = field
+//    set(value) {
+//         if (isAccesible()) {
+//             field = value
+//         }
+//}
