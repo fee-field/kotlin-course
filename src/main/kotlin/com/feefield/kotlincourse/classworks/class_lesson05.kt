@@ -36,22 +36,34 @@ import kotlin.io.encoding.Base64
 //        println(price * koef)
 //    }
 
-fun main() {
-    showLang("Ru")
-    showLang(null)
-    siteLang(null)
+//fun main() {
+//    showLang("Ru")
+//    showLang(null)
+//    siteLang(null)
+//
+//}
+//
+//    fun showLang(lang: String?) {
+//        val defLang = "En"
+//        println(lang?:defLang)
+//    }
+//
+//    fun siteLang(lang:String?) {
+//
+//        val default = "Pl"
+//        println(lang ?: default)
+//
+//
+//    }
 
+
+fun main() {
+    printBox("text")
+    printBox(null)
 }
 
-    fun showLang(lang: String?) {
-        val defLang = "En"
-        println(lang?:defLang)
-    }
+fun printBox(stuff: String?) {
+    stuff?: throw Exception("Box is empty")
+    println(stuff)
+}
 
-    fun siteLang(lang:String?) {
-
-        val default = "Pl"
-        println(lang ?: default)
-
-
-    }
