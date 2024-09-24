@@ -1,6 +1,4 @@
-package com.feefield.kotlincourse.classworks
-
-import kotlin.io.encoding.Base64
+package com.feefield.kotlincourse.classWork
 
 //fun main() {
 //    val sum = "10" + "5"
@@ -58,12 +56,35 @@ import kotlin.io.encoding.Base64
 
 
 fun main() {
-    printBox("text")
-    printBox(null)
+//    printBox("text")
+//    //printBox(null)
+//    println(season(1))
+
+    fun aa(a: Int) {
+       var number = a
+
+        do {
+            println("Число: $number ")
+            number--
+        } while (number >1)
+    }
+    aa(10)
 }
 
-fun printBox(stuff: String?) {
-    stuff?: throw Exception("Box is empty")
-    println(stuff)
-}
+//fun printBox(stuff: String?) {
+//    stuff?: throw Exception("Box is empty")
+//    println(stuff)
+//}
+//
+//
+//
+//fun season (month: Int): String {
+//    return when(month) {
+//        in 3..5 -> "spring"
+//        in 6..8 -> "summer"
+//        else -> if (month == 0) "excessive" else "not enough"
+//
+//    }
+//}}
+//
 
