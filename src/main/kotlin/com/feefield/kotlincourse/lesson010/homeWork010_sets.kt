@@ -82,7 +82,7 @@ println()
 // Реши задачу через вложенные циклы.
     val set09 = setOf(1,2,3,7,39)
     val set091 = setOf(2,4,5,39)
-    var sharedEl = mutableListOf<Int>()
+    val sharedEl = mutableListOf<Int>()
 
     for (i in set09) {
         for (i1 in set091) {
@@ -97,6 +97,33 @@ println()
 //Создайте два множества строк и найдите разность первого множества относительно второго (элементы, присутствующие в первом множестве, но отсутствующие во втором).
 // Реши задачу через вложенные циклы и переменные флаги.
 
-//    val set010 =
+    val set010 = setOf("elem01", "elem02", "elem03")
+    val set0101 = setOf("elem02", "elem03", "elem04")
+    val difference = mutableSetOf<String>()
 
+    for (i3 in set010) {
+        var present = false
+
+        for (i4 in set0101) {
+            if (i3 == i4) {
+                present = true
+            }
+        }
+        if (!present) {
+            difference.add(i3)
+        }
+    }
+println(difference)
+
+//переменные флаги.
+//Задание 11: Конвертация Множества в Список
+//Создайте множество строк и конвертируйте его в список с использованием цикла.
+
+    val set011 = mutableSetOf("phrase01", "phrase02","phrase03","phrase04",)
+    val listToSet = mutableListOf<String>()
+
+    for (i in set011) {
+        listToSet.add(i)
+    }
+    println(listToSet)
 }
