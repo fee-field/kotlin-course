@@ -79,9 +79,9 @@ fun main() {
 //Создайте словарь, где ключами являются строки, а значениями - списки целых чисел.
 // Добавьте несколько элементов в этот словарь.
 
-    val map010 = mutableMapOf("one" to 1, "two" to 2)
-    map010["three"] = 3
-    map010["four"] = 4
+    val map010 = mutableMapOf<String, List<Int>>()
+    map010["first"] = listOf(1,2,3)
+    map010["second"] = listOf(4,5,6)
     println(map010)
 
 //Задание 11: Использование Множества в Качестве Значения
@@ -128,7 +128,7 @@ fun main() {
 //Задание 8: Четвертьфинала
 //Ключи - названия спортивных команд, значения - списки игроков каждой команды
 
-    val teams: MutableMap<String, MutableList<String>> = mutableMapOf()
+    val teams: MutableMap<String, MutableMap<Int, String>> = mutableMapOf()
 
 //Задание 9: Курс лечения
 //Ключи - даты, значения - список препаратов принимаемых в дату
