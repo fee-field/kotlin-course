@@ -2,6 +2,9 @@ package com.feefield.kotlincourse.lesson012
 
 fun main() {
 
+    println(multiplyByTwo(13)) // task 1
+    println(isEven(67))
+
 
 }
 
@@ -63,14 +66,97 @@ fun fun010(a: String?, b: Int?): Boolean? {
     return null
 }
 
+//Задача 1:
+//Напишите функцию multiplyByTwo, которая принимает целое число и возвращает его, умноженное на 2.
 
+fun multiplyByTwo(a: Int): Int {
+    return a * 2
+}
 
+//Задача 2:
+//Создайте функцию isEven, которая принимает целое число и возвращает true, если число чётное, и false в противном случае.
 
+fun isEven(a: Int): Boolean {
+    return if (a % 2 == 0 ) {
+        true
+        } else {
+            false}
+    }
 
+//Задача 3:
+//Напишите функцию printNumbersUntil, которая принимает целое число n и выводит на экран числа от 1 до n.
+// Если число n меньше 1, функция должна прекратить выполнение с помощью return без вывода сообщений.
 
+fun printNumbersUntil(n: Int) {
+    for (i in 1..n) {
+        println(i)
+    }
+    if (n < 1) {
+        return     /// ,????
+    }
+}
 
+//Задача 4:
+//Создайте функцию findFirstNegative, которая принимает список целых чисел и возвращает первое отрицательное число в списке.
+//Если отрицательных чисел нет, функция должна вернуть null.
 
+fun findFirstNegative(n: List<Int>): Int? {
+    for (i in n) {
+        if (i < 0) return i
+    }
+    return null
+}
 
+//Задача 5:
+//Напишите функцию processList, которая принимает список строк. Функция должна проходить по списку и выводить каждую строку.
+// Если встречается null значение, функция должна прекратить выполнение с помощью return без возврата значения.
+
+fun processList(strings: List<String?>) {
+    for (i in strings) {
+        if (i != null) {
+            println(i)
+        } else {
+            return
+        }
+    }
+}
+
+//Сделай рефакторинг функции, через определение вспомогательных приватных функций. Требуется избавиться от дублирования
+// кода и трудно воспринимаемых фрагментов.
+//
+//Сначала сделай запуск функции и посмотри на результат её работы. Сделай запуск после рефакторинга и проверь, чтобы
+// результат работы был аналогичным.
+
+fun drawRectangle(width: Int, height: Int) {
+    if (width <= 0) throw IllegalArgumentException("width должно быть положительным и больше нуля")
+    if (height <= 0) throw IllegalArgumentException("height должно быть положительным и больше нуля")
+
+    // Верхняя граница
+    var topLine = "+"
+    for (i in 1 until width - 1) {
+        topLine += "-"
+    }
+    topLine += "+\n"
+    print(topLine)
+
+    // Боковые границы
+    for (i in 1 until height - 1) {
+        var middleLine = "|"
+        for (j in 1 until width - 1) {
+            middleLine += " "
+        }
+        middleLine += "|\n"
+        print(middleLine)
+    }
+
+    // Нижняя граница
+    var bottomLine = "+"
+    for (i in 1 until width - 1) {
+        bottomLine += "-"
+    }
+    bottomLine += "+\n"
+    print(bottomLine)
+}
 
 
 
