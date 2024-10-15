@@ -63,3 +63,19 @@ fun getMax(a: Int, b: Int): Int {
     }
 
 }
+
+//fun findFirstNegative(list: List<Int>):  Int? {
+//    for (i in list) {
+//        if ( i < 0) {
+//            return i
+//        }
+//    }
+//    return null
+//}
+
+fun processList(list: List<String>): String? {
+    for (i in list) {
+        println(i)
+    }
+    return null
+}
