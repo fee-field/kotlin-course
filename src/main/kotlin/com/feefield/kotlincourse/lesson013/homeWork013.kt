@@ -1,4 +1,4 @@
-package com.feefield.kotlincourse
+package com.feefield.kotlincourse.lesson013
 
 fun main() {
     val collect01 = listOf(1, 3, 5, 6, 7, 9, 19, 27, 19)
