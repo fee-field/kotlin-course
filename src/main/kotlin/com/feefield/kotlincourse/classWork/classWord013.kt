@@ -87,6 +87,16 @@ fun main() {
 
     println(numbers.size)
 
+    val numbers1 = listOf(1,3,5,7)
+    if (numbers1.size < 5) {
+        println("ok")
+    }
+    numbers1.isEmpty()
+    numbers1.isNotEmpty()
+
+    val defaultValue = numbers.getOrElse(8) { 2 }
+    println(defaultValue)
+
 }
 
 
