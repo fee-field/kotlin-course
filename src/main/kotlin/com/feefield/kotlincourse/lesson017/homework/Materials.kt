@@ -1,4 +1,4 @@
-package lesson017.homework
+package com.feefield.kotlincourse.lesson017.homework
 
    abstract class Materials {
 

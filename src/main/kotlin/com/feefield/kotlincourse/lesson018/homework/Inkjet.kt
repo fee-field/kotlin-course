@@ -1,4 +1,6 @@
-package com.feefield.kotlincourse.lesson018.homework
+package com.feefield.kotlincourse.lesson018
+
+import com.feefield.kotlincourse.lesson018.homework.Printer
 
 class InkjetPrinter : Printer() {
     private val colors = listOf(
