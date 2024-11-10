@@ -2,7 +2,7 @@ package com.feefield.kotlincourse.lesson019.homework
 
 abstract class BaseClass(
     // объясни, почему это поле доступно в main() для чтения из класса ChildrenClass  -----
-    // не это же, а с таким же названием, private не может быть доступна за пределами этого класса
+    // не это же, private не может быть доступно за пределами этого класса
     private val privateVal: String,
     // объясни, почему это поле недоступно в main()
     // protected доступны только для класса и наследников, не main
@@ -67,13 +67,13 @@ class ChildrenClass(
     // объясни, почему этот аргумент доступен в main() несмотря на то, что это не поле
     // унаследован как публичный из base
     publicVal: String
-) : BaseClass(privateVal, protectedVal, privateVal) {
+) : BaseClass(privateVal, protectedVal, publicVal) {
 
     //    var publicField = "измени меня из функции main() на Антонио Бандераса и проверь через функцию getAll()" +
     //            "Доработай ChildrenClass таким образом, чтобы это получилось"
 
     override fun verifyPublicField(value: String): Boolean {
-        return value.length > 3
+        return true
     }
 
 //    protected var protectedField = "измени меня из функции main() через сеттер в наследнике"

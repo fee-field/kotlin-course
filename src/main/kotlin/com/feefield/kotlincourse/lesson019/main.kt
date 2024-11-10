@@ -15,6 +15,7 @@ fun main() {
         "protectedVal2",
         "publicVal3",
     )
+
     childrenClass.publicField = "Антонио Бандерас"
     println(childrenClass.publicField)
 
