@@ -1,4 +1,4 @@
-package com.feefield.kotlincourse.lesson022.homework
+package com.feefield.kotlincourse.lesson022.homework.Extensions
 
 import kotlin.math.absoluteValue
 

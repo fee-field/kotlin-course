@@ -1,4 +1,4 @@
-package com.feefield.kotlincourse.lesson022.homework
+package com.feefield.kotlincourse.lesson022.homework.Extensions
 
 //Напиши метод расширения строки, который будет принимать список имён пользователей и
 // выводить в консоли эту строку побуквенно в столбик: имя автора и букву под ним.

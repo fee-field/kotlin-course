@@ -1,4 +1,4 @@
-package com.feefield.kotlincourse.lesson022.homework
+package com.feefield.kotlincourse.lesson022.homework.Extensions
 
 //Задача 5: Кодер-декодер строк
 //Реализуйте для класса String два метода расширения: encrypt и decrypt.

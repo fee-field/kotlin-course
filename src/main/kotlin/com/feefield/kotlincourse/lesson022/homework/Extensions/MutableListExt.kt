@@ -1,4 +1,4 @@
-package com.feefield.kotlincourse.lesson022.homework
+package com.feefield.kotlincourse.lesson022.homework.Extensions
 
 //Создайте функцию-расширение для класса изменяемого списка элементов с дженериком,
 // которая принимает два аргумента: один типа дженерик, допускающий null, и другой

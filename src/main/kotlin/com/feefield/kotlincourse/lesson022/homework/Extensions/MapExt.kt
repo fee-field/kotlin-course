@@ -1,4 +1,4 @@
-package com.feefield.kotlincourse.lesson022.homework
+package com.feefield.kotlincourse.lesson022.homework.Extensions
 
 //Реализуйте функцию-расширение для класса словаря допускающего null с ключами
 // дженериком и значениями типа список из такого же дженерика, которая принимает один

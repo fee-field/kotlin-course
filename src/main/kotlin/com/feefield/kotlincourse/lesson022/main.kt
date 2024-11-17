@@ -1,6 +1,6 @@
 package com.feefield.kotlincourse.lesson022
 
-import com.feefield.kotlincourse.lesson022.homework.*
+import com.feefield.kotlincourse.lesson022.homework.Extensions.*
 
 fun main() {
 

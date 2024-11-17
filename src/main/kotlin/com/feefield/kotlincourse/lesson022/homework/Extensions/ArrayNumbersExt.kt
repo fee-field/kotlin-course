@@ -1,4 +1,4 @@
-package com.feefield.kotlincourse.lesson022.homework
+package com.feefield.kotlincourse.lesson022.homework.Extensions
 
 // Определите функцию-расширение для массива чисел, которая не принимает аргументов
 // и возвращает пару из чисел.

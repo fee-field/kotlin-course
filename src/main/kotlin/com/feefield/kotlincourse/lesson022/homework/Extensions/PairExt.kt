@@ -1,4 +1,4 @@
-package com.feefield.kotlincourse.lesson022.homework
+package com.feefield.kotlincourse.lesson022.homework.Extensions
 
 //Реализуйте метод расширения revert для класса Pair, который меняет местами первый
 // и второй элементы пары. Метод должен возвращать новую пару с перевернутыми элементами.

@@ -1,4 +1,4 @@
-package com.feefield.kotlincourse.lesson022.homework
+package com.feefield.kotlincourse.lesson022.homework.Extensions
 
 //Напишите функцию-расширение для класса символа, допускающего null,
 // которая принимает три аргумента: два типа число и один булево, и ничего не возвращает.
