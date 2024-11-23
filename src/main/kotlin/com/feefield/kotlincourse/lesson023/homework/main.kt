@@ -1,5 +1,7 @@
 package com.feefield.kotlincourse.lesson023.homework
 
+import jdk.incubator.vector.VectorOperators.Test
+
 fun main() {
 
     analyzeDataType("Bla-Bla")
@@ -9,6 +11,13 @@ fun main() {
 
     getAny("3")
     getAny(7)
+
+    println(getStringLengthOrZero("Test"))
+
+    println(safeCastToList(3))
+    println(safeCastToList(listOf(4, 19, 22)))
+
+    println(tryCastToListAndPrint("test"))
 
 
 }
