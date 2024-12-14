@@ -71,7 +71,7 @@ fun main() {
 
     val date1 = LocalDate.of(2023, 2, 25)
     val date2 = LocalDate.of(2024, 2, 25)
-    val formatter1 = DateTimeFormatter.ofPattern("'год' yyyy',  день' dd")
+    val formatter1 = DateTimeFormatter.ofPattern("'месяц' MM',  день' dd")
     println("${date1.plusDays(10).format(formatter1)}")
     println("${date2.plusDays(10).format(formatter1)}")
 
