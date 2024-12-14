@@ -1,0 +1,3 @@
+string01=0.2
+string02=3.3
+string03=7.23

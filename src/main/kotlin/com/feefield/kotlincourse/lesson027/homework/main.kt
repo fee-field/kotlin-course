@@ -19,22 +19,23 @@ fun main() {
 
     // Task 3
 
-    Person("Name2", 25).also {
+    val pers3 = Person("Name2", 25).also {
         also1(it)
     }
 
     // Task 4
 
-    val pers2 = Person("Name3", 41)
-    val emp2 = with(pers2) {
+    val pers4 = Person("Name3", 41)
+    val emp2 = with(pers4) {
         Employee(name, age, "Team lead")
     }
 println(emp2)
+
     // Task 5
 
-    val pers3 = Person("Name4", 37)
+    val pers5 = Person("Name4", 37)
 
-    val empl3 = pers3.run {
+    val empl3 = pers5.run {
         Employee(name, age, "HR").apply {
             email = "test@test.com"
             department = "Testing"
@@ -46,7 +47,7 @@ println(emp2)
 
     val pers6: Person? = Person("Name6", 55)
     val empl6 = let1(pers6)
-
+    println(empl6)
 }
 
 //Task 1
