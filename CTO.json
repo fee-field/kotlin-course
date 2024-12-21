@@ -1,0 +1,36 @@
+{
+  "name": "Bob",
+  "employedOrNot": true,
+  "dateOfBirth": "December, 14, 1970",
+  "jobTitle": "CTO",
+  "subordinates": [
+    {
+      "name": "Billy",
+      "employedOrNot": true,
+      "dateOfBirth": "October, 5, 1980",
+      "jobTitle": "BACKEND_DEV",
+      "subordinates": []
+    },
+    {
+      "name": "Brown",
+      "employedOrNot": true,
+      "dateOfBirth": "February, 29, 1988",
+      "jobTitle": "GAME_DEV",
+      "subordinates": []
+    },
+    {
+      "name": "Benny",
+      "employedOrNot": true,
+      "dateOfBirth": "August, 15, 2000",
+      "jobTitle": "QA",
+      "subordinates": []
+    },
+    {
+      "name": "Bonnie",
+      "employedOrNot": true,
+      "dateOfBirth": "July, 7, 1990",
+      "jobTitle": "UX_UI",
+      "subordinates": []
+    }
+  ]
+}

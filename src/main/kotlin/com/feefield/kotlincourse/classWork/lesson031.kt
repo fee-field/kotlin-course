@@ -71,10 +71,8 @@ fun main() {
     val deserial1 = gson.fromJson(json, University::class.java)
     println(deserial1)
 
-
 }
 
 class Calculator() {
-
     fun plus(a: Int, b: Int) = a + b
 }
